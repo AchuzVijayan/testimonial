@@ -1,0 +1,125 @@
+body {
+  margin: 0px;
+  background-color: rgb(198, 193, 193);
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  word-break: break-word;
+  text-wrap: balance;
+  row-gap: 20px;
+}
+
+#head_container {
+  background: linear-gradient(1deg, rgb(11, 11, 45), rgb(183, 23, 183));
+  height: 10px;
+  width: 100%;
+  min-height: max-content;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+  /* font-size:clamp(0.1em, 1.5vw, 10em); */
+  padding: 40px 20px;
+  row-gap: 10px;
+  box-sizing: border-box;
+}
+
+#head_container h1,
+#head_container p {
+  margin: 0px;
+  color: antiquewhite;
+}
+
+#main_container {
+  /* align-self: center; */
+  justify-content: space-around;
+  display: flex;
+  flex-flow: row wrap;
+  background-color: rgb(198, 193, 193);
+  width: 97%;
+  row-gap: 30px;
+  column-gap: 30px;
+  margin: 0px auto;
+}
+
+.profile_pic {
+  border-radius: 50%;
+  width: 10%;
+  height: 10%;
+  min-height: 50px;
+  min-width: 50px;
+  align-self: center;
+}
+
+.profile_status {
+  color: #a8a6ab;
+}
+
+.inner_img_name_container {
+  display: flex;
+  flex-direction: row;
+  column-gap: 20px;
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  row-gap: 15px;
+}
+.details h2,
+.details p {
+  margin: 0;
+}
+
+.front_container {
+  background-color: white;
+  width: 100%;
+  border-radius: 10px;
+  margin: 0px;
+  padding: 20px;
+  box-sizing: border-box;
+  filter: drop-shadow(10px 10px 10px black);
+}
+
+.back_container {
+  max-width: 700px;
+  min-height: max-content;
+  border-radius: 10px;
+  padding-left: 0.4%;
+  display: flex;
+  align-items: stretch;
+}
+
+#front_container_1,
+#front_container_3,
+#front_container_5 {
+  background-color: rgb(73, 80, 80);
+}
+
+#front_container_2,
+#front_container_4,
+#front_container_6 {
+  background-color: rgb(92, 103, 103);
+}
+
+
+.front_container:hover {
+  filter: drop-shadow(10px 10px 20px rgb(255, 255, 255));
+  background-color: rgb(85, 81, 81);
+  color: white;
+}
+
+.back_container:nth-of-type(odd) {
+  background-color: rgb(150, 6, 145);
+}
+
+.back_container:nth-of-type(even) {
+  background-color: rgb(35, 55, 170);
+}
+
+.back_container:hover {
+  background-color: rgb(3, 35, 3);
+}
